@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: adx-server
+  threads:
+    virtual:
+      enabled: true
+  profiles:
+    active: dev
+
+server:
+  port: 8081
+  tomcat:
+    keep-alive-timeout: 60s
+    max-keep-alive-requests: -1
+
+auction:
+  logging:
+    path: logs
+    async:
+      queue-size: 2048
+      discarding-threshold: 0
+      never-block: false

@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+logging:
+  level:
+    com.oakrtb.server: DEBUG
+
+auction:
+  logging:
+    path: logs
+    async:
+      queue-size: 1024
+      discarding-threshold: 0
+      never-block: false

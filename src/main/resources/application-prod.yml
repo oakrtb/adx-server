@@ -1,0 +1,15 @@
+server:
+  port: ${PORT:8081}
+
+logging:
+  level:
+    com.oakrtb.server: INFO
+    org.springframework: WARN
+
+auction:
+  logging:
+    path: ${LOG_PATH:/var/log/adx-server}
+    async:
+      queue-size: 8192
+      discarding-threshold: 0
+      never-block: true
